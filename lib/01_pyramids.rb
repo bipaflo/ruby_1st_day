@@ -1,9 +1,12 @@
-def half_pyramid
-  print"> "
-  y = gets.chomp
-  n=1
-  while n <= y.to_i
-    n = n +1
-    puts ("#" * n).rjust(100)
-
+def full_pyramid
+puts " Salut, bienvenue dans ma super pyramide ! Combien d'étages veux tu ?"
+y = gets.chomp.to_i
+i=1
+while i <= y
+  full_pyramid = ("#" * (2*i-1))
+  puts full_pyramid.center(full_pyramid.to_i)
+  i += 1
 end
+end
+
+full_pyramid
